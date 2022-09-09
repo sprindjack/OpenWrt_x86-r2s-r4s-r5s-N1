@@ -8,7 +8,7 @@ svn export --force https://github.com/coolsnowwolf/openwrt-gl-ax1800/trunk/packa
 
 svn co https://github.com/coolsnowwolf/openwrt-gl-ax1800/trunk/target/linux/generic target/linux/generic
 svn co https://github.com/coolsnowwolf/openwrt-gl-ax1800/trunk/target/linux/ipq60xx target/linux/ipq60xx
-svn co https://github.com/coolsnowwolf/openwrt-gl-ax1800/trunk/dl dl
+wget -P dl/ https://github.com/coolsnowwolf/openwrt-gl-ax1800/raw/master/dl/linux-4.4.60.tar.xz
 svn co https://github.com/coolsnowwolf/openwrt-gl-ax1800/trunk/package/kernel package/kernel
 svn co https://github.com/coolsnowwolf/openwrt-gl-ax1800/trunk/package/network/utils/fullconenat feeds/kiddin9/fullconenat
 svn co https://github.com/coolsnowwolf/openwrt-gl-ax1800/trunk/package/network/config/netifd package/network/config/netifd

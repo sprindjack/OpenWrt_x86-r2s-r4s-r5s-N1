@@ -10,7 +10,7 @@ svn co https://github.com/coolsnowwolf/openwrt-gl-ax1800/trunk/target/linux/gene
 svn co https://github.com/coolsnowwolf/openwrt-gl-ax1800/trunk/target/linux/ipq60xx target/linux/ipq60xx
 wget -P dl/ https://github.com/coolsnowwolf/openwrt-gl-ax1800/raw/master/dl/linux-4.4.60.tar.xz
 svn co https://github.com/coolsnowwolf/openwrt-gl-ax1800/trunk/package/kernel package/kernel
-svn co https://github.com/coolsnowwolf/openwrt-gl-ax1800/trunk/package/network/utils/fullconenat feeds/kiddin9/fullconenat
+svn co https://github.com/coolsnowwolf/openwrt-gl-ax1800/trunk/package/network/services/fullconenat feeds/kiddin9/fullconenat
 svn co https://github.com/coolsnowwolf/openwrt-gl-ax1800/trunk/package/network/config/netifd package/network/config/netifd
 svn co https://github.com/coolsnowwolf/openwrt-gl-ax1800/trunk/toolchain toolchain
 rm -rf target/linux/generic/files

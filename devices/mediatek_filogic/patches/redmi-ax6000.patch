@@ -1,8 +1,8 @@
 --- a/target/linux/mediatek/filogic/base-files/etc/board.d/02_network
 +++ b/target/linux/mediatek/filogic/base-files/etc/board.d/02_network
-@@ -12,15 +12,38 @@ mediatek_setup_interfaces()
- 	mediatek,mt7986b-rfb)
- 		ucidef_set_interfaces_lan_wan "lan1 lan2 lan3 lan4" wan
+@@ -16,15 +16,38 @@ mediatek_setup_interfaces()
+ 		ucidef_set_interfaces_lan_wan "lan1 lan2 lan3 lan4 sfp2" "eth1 wan"
+ 		ucidef_set_interface_macaddr "wan" "$(macaddr_add $(cat /sys/class/net/eth0/address) 1)"
  		;;
 +	xiaomi,redmi-router-ax6000)
 +		ucidef_set_interfaces_lan_wan "lan1 lan2 lan3" wan
@@ -42,7 +42,7 @@
 
 --- a/target/linux/mediatek/image/filogic.mk
 +++ b/target/linux/mediatek/image/filogic.mk
-@@ -49,3 +49,18 @@ define Device/mediatek_mt7986b-rfb
+@@ -125,3 +125,18 @@ define Device/mediatek_mt7986b-rfb
    IMAGE/sysupgrade.bin := sysupgrade-tar | append-metadata
  endef
  TARGET_DEVICES += mediatek_mt7986b-rfb

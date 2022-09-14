@@ -27,7 +27,7 @@
  include $(SUBTARGET).mk
  
 +define Image/Build
-+	elif [ $(PROFILE_SANITIZED) == "friendlyarm_nanopi-r4se" ]; then \
++	if [ $(PROFILE_SANITIZED) == "friendlyarm_nanopi-r4se" ]; then \
 +		export IMG_PREFIX="$(IMG_PREFIX)$(if $(PROFILE_SANITIZED),-$(PROFILE_SANITIZED))"; \
 +		export BIN_DIR=$(BIN_DIR); \
 +		export TOPDIR=$(TOPDIR); \
